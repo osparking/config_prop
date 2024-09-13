@@ -27,7 +27,7 @@ class MainControllerTest {
                 .andExpect(status().isOk())
                 // has field name `threadPool` of with value of 5
                 .andExpect(jsonPath("$.threadPool", is(5)))
-                .andExpect(jsonPath("$.email", is("[email protected]")));
+                .andExpect(jsonPath("$.email", is("test@bumsoap.com")));
     }
 
     @Test
